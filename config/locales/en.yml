@@ -1,33 +1,47 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  customer:
+    update:
+      failure: 'Customer could not be updated.'
+    password:
+      invalid: 'Invalid password.'
+    account:
+      invalid: 'Account does not exist.'
+      not_found: 'Account does not exist.'
+      confirm_password: 'Your password and confirm password are not same.'
+    authorize:
+      unauthorize: 'Customer not authorized, please check authorization token.'
+    registered:
+      already: 'Customer already exists with this same email on system'
+    logout: 'Logout successfully.'
+    login: 'Please login.'
+    not_found: 'Customer not found.'
+    not_valid: 'Customer is not valid.'
+    jwt_token:
+      missing: 'Missing jwt token.'
+      invalid: 'Invalid jwt token.'
+    address:
+      not_found: 'Address not found.'
+      destroy: 'Address deleted successfully.'
+    verify_otp: 'Please verify otp.'
+    invalid_otp: 'Invalid otp.'
+    invalid_token: 'Invalid reset password token.'
+  wishlist:
+    item_not_found: 'Item not found in your wishlist.'
+    item_added: 'Item added successfully.'
+    item_removed: 'Item removed successfully.'
+    no_access: "Access denied"
+    item_already: "Item already added."
+  follower:
+    same_account: "can't follow yourself"
+    already_exist: 'already followed'
+    not_follow: 'you are not following'
+  sms:
+    forget_password: 'Your OTP is: %{otp_code}.'
+  enter_field: 'Please enter any one email/phone_number.'
+  account:
+    password:
+      invalid: 'Invalid password.'
+
+  x_app_token: 'X-APP-TOKEN is not valid.'
+
+
